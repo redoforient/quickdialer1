@@ -1,0 +1,75 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .idea\
+* .idea\dbnavigator.xml
+* .idea\encodings.xml
+* .idea\inspectionProfiles\
+* .idea\inspectionProfiles\Project_Default.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\quickdialer.iml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* README.md
+* ant.properties
+* build.xml
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\org\apache\lucene\analysis\package.html => app\src\main\resources\org\apache\lucene\analysis\package.html
+* src\org\apache\lucene\analysis\tokenattributes\package.html => app\src\main\resources\org\apache\lucene\analysis\tokenattributes\package.html
+* src\org\apache\lucene\codecs\lucene3x\package.html => app\src\main\resources\org\apache\lucene\codecs\lucene3x\package.html
+* src\org\apache\lucene\codecs\lucene40\package.html => app\src\main\resources\org\apache\lucene\codecs\lucene40\package.html
+* src\org\apache\lucene\codecs\lucene40\values\package.html => app\src\main\resources\org\apache\lucene\codecs\lucene40\values\package.html
+* src\org\apache\lucene\codecs\package.html => app\src\main\resources\org\apache\lucene\codecs\package.html
+* src\org\apache\lucene\codecs\perfield\package.html => app\src\main\resources\org\apache\lucene\codecs\perfield\package.html
+* src\org\apache\lucene\document\package.html => app\src\main\resources\org\apache\lucene\document\package.html
+* src\org\apache\lucene\index\package.html => app\src\main\resources\org\apache\lucene\index\package.html
+* src\org\apache\lucene\search\package.html => app\src\main\resources\org\apache\lucene\search\package.html
+* src\org\apache\lucene\search\payloads\package.html => app\src\main\resources\org\apache\lucene\search\payloads\package.html
+* src\org\apache\lucene\search\similarities\package.html => app\src\main\resources\org\apache\lucene\search\similarities\package.html
+* src\org\apache\lucene\search\spans\package.html => app\src\main\resources\org\apache\lucene\search\spans\package.html
+* src\org\apache\lucene\store\package.html => app\src\main\resources\org\apache\lucene\store\package.html
+* src\org\apache\lucene\util\automaton\createLevAutomata.py => app\src\main\resources\org\apache\lucene\util\automaton\createLevAutomata.py
+* src\org\apache\lucene\util\automaton\package.html => app\src\main\resources\org\apache\lucene\util\automaton\package.html
+* src\org\apache\lucene\util\automaton\UTF32ToUTF8.py => app\src\main\resources\org\apache\lucene\util\automaton\UTF32ToUTF8.py
+* src\org\apache\lucene\util\fst\package.html => app\src\main\resources\org\apache\lucene\util\fst\package.html
+* src\org\apache\lucene\util\fst\TODO => app\src\main\resources\org\apache\lucene\util\fst\TODO
+* src\org\apache\lucene\util\mutable\package.html => app\src\main\resources\org\apache\lucene\util\mutable\package.html
+* src\org\apache\lucene\util\package.html => app\src\main\resources\org\apache\lucene\util\package.html
+* src\org\apache\lucene\util\packed\gen_BulkOperation.py => app\src\main\resources\org\apache\lucene\util\packed\gen_BulkOperation.py
+* src\org\apache\lucene\util\packed\gen_Direct.py => app\src\main\resources\org\apache\lucene\util\packed\gen_Direct.py
+* src\org\apache\lucene\util\packed\gen_Packed64SingleBlock.py => app\src\main\resources\org\apache\lucene\util\packed\gen_Packed64SingleBlock.py
+* src\org\apache\lucene\util\packed\gen_PackedThreeBlocks.py => app\src\main\resources\org\apache\lucene\util\packed\gen_PackedThreeBlocks.py
+* src\org\apache\lucene\util\packed\package.html => app\src\main\resources\org\apache\lucene\util\packed\package.html
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

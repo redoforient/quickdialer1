@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/input_bar"
+            android:layout_width="match_parent"
+            android:layout_height="46dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:gravity="center"
+            android:background="@drawable/dialpad_background" >
+
+        <TextView
+                android:id="@+id/digits"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:scrollHorizontally="true"
+                android:textAppearance="@style/DigitsTextAppearance"
+                android:nextFocusRight="@+id/deleteButton"
+                android:background="@android:color/transparent"
+                />
+
+        <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="56dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:state_enabled="false"
+                android:src="@drawable/ic_dial_action_delete"
+                android:background="@android:color/transparent"
+                android:onClick="onBtnClick"
+                android:contentDescription="@string/delete_button_descrition"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/keyboard"
+            style="@style/keyboard"
+            android:layout_alignParentBottom="true">
+		<include layout="@layout/keyboard"/>
+        <!-- <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <include layout="@layout/keyboard"/>
+        </FrameLayout>
+         -->
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/keyboard"
+            android:layout_below="@id/input_bar"/>
+</RelativeLayout>
